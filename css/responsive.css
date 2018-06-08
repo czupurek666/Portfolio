@@ -134,15 +134,19 @@
     width:100%;
   }
 }
-
-@media screen and (max-width: 1000px) {
+/*
+ *
+ * padding correction
+ *
+ */
+/* @media screen and (max-width: 1000px) {
 
   .header__inner,
   .nav__list {
     box-sizing: border-box;
     padding-right: 15px;
   }
-}
+} */
 
 
 @media screen and (min-width: 800px)  {
