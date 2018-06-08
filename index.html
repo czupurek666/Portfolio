@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Karolina Kantorska Front-End Engeenier Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400" rel="stylesheet">
-    <link rel="stylesheet"  href="css/main.css">
-    <link rel="stylesheet"  href="css/responsive.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet"  href="main.css">
+    <link rel="stylesheet"  href="responsive.css">
   </head>
 
   <body>
@@ -54,10 +53,10 @@
         <section class="portfolio">
           <h2>Projects</h2>
 
-          <article class="portfolio2">
-            <article class="project 1">
+          <section class="portfolio2">
+            <section class="project 1">
                 <div class="project_title">
-                  <a href="#"> <h3 >Project 1</h3> </a>
+                  <h3 >Project 1</h3>
                 </div>
                 <div class="project_description">
                   <p>Placeholder for a text about project 1. Placeholder for a text about project 1 <p>
@@ -65,10 +64,10 @@
                 <div class="project_logo" >
                   <img class="project_img" src="Image/project1.jpg" alt="Project 1">
                 </div>
-            </article>
-            <article class="project 2">
+            </section>
+            <section class="project 2">
                 <div class="project_title">
-                  <a href="#"> <h3 >Project 2</h3> </a>
+                  <h3 >Project 2</h3>
                 </div>
                 <div class="project_description">
                   <p class="project_text">Placeholder for a text about project 2. Placeholder for a text about project 2 <p>
@@ -76,10 +75,10 @@
               <div class="project_logo" >
                 <img class="project_img" src="Image/project2.jpg" alt="Project 2">
               </div>
-            </article>
-            <article class="project 3">
+            </section>
+            <section class="project 3">
               <div class="project_title">
-                <a href="#"> <h3 >Project 3</h3> </a>
+                <h3 >Project 3</h3>
               </div>
               <div class="project_description">
                 <p class="project_text">Placeholder for a text about project 3. Placeholder for a text about project 3. <p>
@@ -87,7 +86,7 @@
               <div class="project_logo" >
                 <img class="project_img" src="Image/project3.jpg" alt="Project 3">
               </div>
-            </article>
+            </section>
           </section>
         </section>
 <!-- Personal infotmation and education -->
@@ -135,5 +134,22 @@
         </footer>
       </section>
     </main>
+    <script>
+      /*
+       * Open the drawer when the menu is clicked.
+       */
+      var menu = document.querySelector("#nav_0");
+      var main = document.querySelector("main");
+      var drawer = document.querySelector(".nav__list");
+
+      menu.addEventListener("click", function(e) {
+        drawer.classList.toggle("open");
+        e.stopPropagation();
+      });
+      main.addEventListener("click", function() {
+        drawer.classList.remove("open");
+      });
+
+    </script>
   </body>
 </html>
