@@ -5,6 +5,11 @@ html {
   margin-top: -10px;
 }
 
+body {
+  max-width: 1000px;
+  margin :0 auto;
+}
+
 h2 {
   font-size: 1.2em;
   font-weight: 300;
@@ -30,7 +35,7 @@ p {
 .header {
   width: 100%;
   max-width: 1000px;
-  display: flex;
+  display: fixed;
   margin-left: auto;
   margin-right: auto;
 }
